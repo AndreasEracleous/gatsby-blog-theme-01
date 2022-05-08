@@ -8,11 +8,14 @@
     "gatsby"
   ],
   "scripts": {
+    "build": "gatsby clean && gatsby build",
     "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "start-worker": "npm run build && wrangler preview --watch",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "npm run build && wrangler publish"
   },
   "dependencies": {
     "@mdx-js/mdx": "v1",
@@ -45,7 +48,9 @@
     "postcss": "^8.4.12",
     "postcss-import": "^14.1.0",
     "postcss-nesting": "^10.1.4",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "eslint": "^7.6.0",
+    "prettier": "^2.0.5"
   },
   "engines": {
     "node": ">=v12"
