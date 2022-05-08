@@ -8,14 +8,13 @@
     "gatsby"
   ],
   "scripts": {
-    "build": "gatsby clean && gatsby build",
+    "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "start-worker": "npm run build && wrangler preview --watch",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "start": "gatsby develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "deploy": "npm run build && wrangler publish"
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
     "@mdx-js/mdx": "v1",

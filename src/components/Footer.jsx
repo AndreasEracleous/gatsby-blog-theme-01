@@ -1,11 +1,11 @@
-import React from "react";
-import { Link } from "gatsby";
-import { URL_LIST } from "../config/constants";
+import React from "react"
+import { Link } from "gatsby"
+import { URL_LIST } from "../config/constants"
 
 const Footer = () => {
-  const twitterURL = URL_LIST["twitter"];
-  const linkedinURL = URL_LIST["linkedin"];
-  const githubURL = URL_LIST["github"];
+  const twitterURL = URL_LIST["twitter"]
+  const linkedinURL = URL_LIST["linkedin"]
+  const githubURL = URL_LIST["github"]
   return (
     <footer className="mt-20 mb-5">
       <nav className="flex space-x-4">
@@ -57,7 +57,7 @@ const Footer = () => {
         </a>
       </small>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
