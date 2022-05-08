@@ -1,0 +1,61 @@
+@layer base {
+  #___gatsby {
+    @apply text-lg;
+  }
+
+  body {
+    @apply bg-slate-50 text-base text-slate-500;
+  }
+
+  a {
+    @apply transition;
+  }
+
+  h1 {
+    @apply text-black text-3xl sm:text-4xl;
+  }
+  h2 {
+    @apply text-black text-2xl sm:text-3xl my-8;
+  }
+  h3 {
+    @apply text-black text-xl sm:text-2xl my-8;
+  }
+  h4 {
+    @apply text-black text-lg sm:text-xl my-8;
+  }
+  h5 {
+    @apply text-black text-sm my-8;
+  }
+  h6 {
+    @apply text-black text-xs my-8;
+  }
+  p {
+    @apply mb-5;
+  }
+  table {
+    @apply mb-6;
+  }
+  blockquote {
+    @apply px-5 py-8 my-10 italic border-l-4 sm:px-12;
+  }
+  blockquote p:last-child {
+    @apply mb-0;
+  }
+  pre {
+    @apply my-10 shadow-lg;
+  }
+  code {
+    @apply rounded block bg-gray text-white p-10;
+  }
+  ul {
+    @apply list-disc list-outside pl-10;
+  }
+
+  ol {
+    @apply list-decimal pl-10;
+  }
+
+  li {
+    @apply my-2;
+  }
+}
