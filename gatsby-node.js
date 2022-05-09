@@ -41,7 +41,8 @@ exports.createPages = async ({ graphql, actions }) => {
       const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       await createPage({
-        path: post.slug,
+        // Fix path prefix for github repository /gatsby-blog-theme-01/
+        path: `/gatsby-blog-theme-01/${post.slug}`,
         component: blogPost,
         context: {
           id,
@@ -58,10 +59,11 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (node.internal.type === `Mdx`) {
     const value = createFilePath({ node, getNode })
+
     createNodeField({
       name: `slug`,
       node,
-      // Fix path prefix for github repository
+      // Fix path prefix for github repository /gatsby-blog-theme-01
       value: `/gatsby-blog-theme-01${value}`,
     })
   }
