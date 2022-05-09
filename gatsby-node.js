@@ -61,6 +61,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     createNodeField({
       name: `slug`,
       node,
+      // Fix path prefix for github repository
       value: `/gatsby-blog-theme-01${value}`,
     })
   }
