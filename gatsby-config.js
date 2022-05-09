@@ -16,7 +16,7 @@ module.exports = {
     ...SITE_METADATA,
     siteUrl,
   },
-  pathPrefix: "/",
+  pathPrefix: "/gatsby-blog-theme-01",
   plugins: [
     "gatsby-plugin-preact",
     "gatsby-plugin-postcss",
