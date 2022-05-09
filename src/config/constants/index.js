@@ -1,16 +1,14 @@
-const { FaTwitter, FaLinkedin, FaGithub } = require(`react-icons/fa`);
+const { FaTwitter, FaLinkedin, FaGithub } = require(`react-icons/fa`)
 
 module.exports.SITE_METADATA = {
-  title: `frontendlab`,
+  title: `FrontendDeveloper`,
   description: `This is my coding blog.`,
   lastBuildDate: new Date(Date.now()).toISOString(),
-  authorName: `Author`,
-  siteLanguage: `en-GB`,
-  siteLocale: `en_gb`,
+  authorName: `Andreas`,
   social: {
     twitter: `AndreasFrontDev`,
   },
-};
+}
 
 module.exports.PAGE_CONTENT = {
   title: "Hey, I'm Andreas",
@@ -28,18 +26,18 @@ module.exports.PAGE_CONTENT = {
   subscribe_msg: "You have successfully joined our subscriber list.",
   subscribe_url:
     "https://assets.mailerlite.com/jsonp/41128/forms/54218114393441507/subscribe",
-};
+}
 
 module.exports.SOCIA_MEDIA_LIST = {
   twitter: FaTwitter,
   linkedin: FaLinkedin,
   github: FaGithub,
-};
+}
 
 module.exports.URL_LIST = {
   twitter: "https://twitter.com/AndreasFrontDev",
   linkedin: "https://cy.linkedin.com/in/andreaseracleous",
   github: "https://github.com/AndreasEracleous",
-};
+}
 
-module.exports.POSTS_PER_PAGE = 8;
+module.exports.POSTS_PER_PAGE = 8

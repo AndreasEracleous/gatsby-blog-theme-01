@@ -1,17 +1,17 @@
-const path = require(`path`);
-const { createFilePath } = require(`gatsby-source-filesystem`);
+const path = require(`path`)
+const { createFilePath } = require(`gatsby-source-filesystem`)
 
-const blogPost = path.resolve(`./src/templates/BlogPost.jsx`);
+const blogPost = path.resolve(`./src/templates/BlogPost.jsx`)
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions;
+  const { createPage } = actions
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
         allMdx(
-          sort: { fields: [frontmatter___date], order: ASC }
+          sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {
           nodes {
@@ -21,25 +21,24 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     `
-  );
+  )
 
   if (result.errors) {
     reporter.panicOnBuild(
       `There was an error loading your blog posts`,
       result.errors
-    );
-    return;
+    )
+    return
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMdx.nodes;
+  const posts = result.data.allMdx.nodes
 
   await Promise.all(
     posts.map(async (post, index) => {
-      const id = post.id;
-      const previousPostId = index === 0 ? null : posts[index - 1].id;
-      const nextPostId =
-        index === posts.length - 1 ? null : posts[index + 1].id;
+      const id = post.id
+      const previousPostId = index === 0 ? null : posts[index - 1].id
+      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
 
       await createPage({
         path: post.slug,
@@ -49,7 +48,7 @@ exports.createPages = async ({ graphql, actions }) => {
           previousPostId,
           nextPostId,
         },
-      });
+      })
     })
-  );
-};
+  )
+}

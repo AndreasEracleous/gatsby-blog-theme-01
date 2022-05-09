@@ -1,8 +1,9 @@
 import React from "react"
 import { Link } from "gatsby"
-import { URL_LIST } from "../config/constants"
+import { SITE_METADATA, URL_LIST } from "../config/constants"
 
 const Footer = () => {
+  const title = SITE_METADATA["title"]
   const twitterURL = URL_LIST["twitter"]
   const linkedinURL = URL_LIST["linkedin"]
   const githubURL = URL_LIST["github"]
@@ -45,7 +46,7 @@ const Footer = () => {
       </nav>
       <hr className="my-3 border-gray" />
       <small className="text-base">
-        © {new Date().getFullYear()} frontendlab | All Rights Reserved | Website
+        © {new Date().getFullYear()} {title} | All Rights Reserved | Website
         designed &amp; developed by{" "}
         <a
           href="https://andreaseracleous.com/"

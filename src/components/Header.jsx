@@ -1,9 +1,9 @@
-import React from "react";
-import { Link } from "gatsby";
-import { SITE_METADATA } from "../config/constants";
+import React from "react"
+import { Link } from "gatsby"
+import { SITE_METADATA } from "../config/constants"
 
 const Header = () => {
-  const title = SITE_METADATA["title"];
+  const title = SITE_METADATA["title"]
 
   return (
     <header className="flex py-9">
@@ -11,7 +11,7 @@ const Header = () => {
         <span className="text-black font-semibold">{title}</span>
       </Link>
     </header>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header
