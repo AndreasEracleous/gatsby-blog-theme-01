@@ -14,6 +14,9 @@ const Footer = () => {
           className="text-gray text-base hover:underline"
           to="/sitemap/sitemap-index.xml"
         >
+          Sitemap
+        </Link>
+        <Link className="text-gray text-base hover:underline" to="/rss.xml">
           RSS
         </Link>
         <a

@@ -11,6 +11,10 @@ var plugins = [{
       plugin: require('/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/gatsby-plugin-react-helmet/gatsby-ssr.js'),
       options: {"plugins":[]},
     },{
+      name: 'gatsby-plugin-feed',
+      plugin: require('/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/gatsby-plugin-feed/gatsby-ssr.js'),
+      options: {"plugins":[],"query":"\n\t\t\t\t{\n\t\t\t\t  site {\n            siteMetadata {\n              title\n              description\n              siteUrl\n              site_url: siteUrl\n            }\n\t\t\t\t  }\n\t\t\t\t}\n\t\t\t  ","feeds":[{"query":"\n\t\t\t\t\t{\n            allMdx(sort: {fields: [frontmatter___date], order: DESC}) {\n              nodes {\n                slug\n                frontmatter {\n                  title\n                  date\n                }\n                body\n                excerpt\n              }\n            }\n\t\t\t\t\t}\n\t\t\t\t  ","output":"/rss.xml","title":"Your Site's RSS Feed","match":"^/blog/"}]},
+    },{
       name: 'gatsby-plugin-sitemap',
       plugin: require('/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/gatsby-plugin-sitemap/gatsby-ssr.js'),
       options: {"plugins":[],"output":"/sitemap","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]},

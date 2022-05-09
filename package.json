@@ -8,6 +8,7 @@
     "gatsby"
   ],
   "scripts": {
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
@@ -20,6 +21,7 @@
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
     "gatsby": "^4.13.0",
+    "gatsby-plugin-feed": "^4.13.0",
     "gatsby-plugin-google-analytics": "^4.13.0",
     "gatsby-plugin-image": "^2.13.0",
     "gatsby-plugin-manifest": "^4.13.0",
@@ -44,6 +46,7 @@
     "@tailwindcss/forms": "^0.5.0",
     "autoprefixer": "^10.4.5",
     "gatsby-plugin-postcss": "^5.13.0",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.4.12",
     "postcss-import": "^14.1.0",
     "postcss-nesting": "^10.1.4",
