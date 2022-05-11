@@ -17,6 +17,7 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    "gatsby-plugin-netlify",
     "gatsby-plugin-preact",
     "gatsby-plugin-postcss",
     {
