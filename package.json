@@ -19,7 +19,6 @@
   "dependencies": {
     "@mdx-js/mdx": "v1",
     "@mdx-js/react": "v1",
-    "@react-icons/all-files": "^4.1.0",
     "gatsby": "^4.13.0",
     "gatsby-plugin-feed": "^4.13.0",
     "gatsby-plugin-google-analytics": "^4.13.0",
