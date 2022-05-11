@@ -1,7 +1,7 @@
 // const { FaTwitter, FaLinkedin, FaGithub } = require(`react-icons/fa`)
-// const { FaTwitter } = require(`@react-icons/all-files/fa/FaTwitter`)
-// const { FaLinkedin } = require(`@react-icons/all-files/fa/FaLinkedin`)
-// const { FaGithub } = require(`@react-icons/all-files/fa/FaGithub`)
+const { FaTwitter } = require(`@react-icons/all-files/fa/FaTwitter`)
+const { FaLinkedin } = require(`@react-icons/all-files/fa/FaLinkedin`)
+const { FaGithub } = require(`@react-icons/all-files/fa/FaGithub`)
 
 module.exports.SITE_METADATA = {
   title: `FrontendDeveloper`,
@@ -32,9 +32,9 @@ module.exports.PAGE_CONTENT = {
 }
 
 module.exports.SOCIA_MEDIA_LIST = {
-  twitter: null,
-  linkedin: null,
-  github: null,
+  twitter: FaTwitter,
+  linkedin: FaLinkedin,
+  github: FaGithub,
 }
 
 module.exports.URL_LIST = {

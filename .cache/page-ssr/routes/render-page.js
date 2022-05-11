@@ -626,6 +626,296 @@ function createElement (type, props) {
 
 /***/ }),
 
+/***/ 9211:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// THIS FILE IS AUTO GENERATED
+var GenIcon = (__webpack_require__(9720)/* .GenIcon */ .w_)
+module.exports.FaGithub = function FaGithub (props) {
+  return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 496 512"},"child":[{"tag":"path","attr":{"d":"M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"}}]})(props);
+};
+
+
+/***/ }),
+
+/***/ 5337:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// THIS FILE IS AUTO GENERATED
+var GenIcon = (__webpack_require__(9720)/* .GenIcon */ .w_)
+module.exports.FaLinkedin = function FaLinkedin (props) {
+  return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 448 512"},"child":[{"tag":"path","attr":{"d":"M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"}}]})(props);
+};
+
+
+/***/ }),
+
+/***/ 1362:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+// THIS FILE IS AUTO GENERATED
+var GenIcon = (__webpack_require__(9720)/* .GenIcon */ .w_)
+module.exports.FaTwitter = function FaTwitter (props) {
+  return GenIcon({"tag":"svg","attr":{"viewBox":"0 0 512 512"},"child":[{"tag":"path","attr":{"d":"M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"}}]})(props);
+};
+
+
+/***/ }),
+
+/***/ 9720:
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "w_": () => (/* reexport */ GenIcon)
+});
+
+// UNUSED EXPORTS: DefaultContext, IconBase, IconContext, IconsManifest
+
+;// CONCATENATED MODULE: ./node_modules/@react-icons/all-files/lib/esm/iconsManifest.js
+var IconsManifest = [
+  {
+    "id": "fa",
+    "name": "Font Awesome",
+    "projectUrl": "https://fontawesome.com/",
+    "license": "CC BY 4.0 License",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  },
+  {
+    "id": "io",
+    "name": "Ionicons 4",
+    "projectUrl": "https://ionicons.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
+  },
+  {
+    "id": "io5",
+    "name": "Ionicons 5",
+    "projectUrl": "https://ionicons.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/ionic-team/ionicons/blob/master/LICENSE"
+  },
+  {
+    "id": "md",
+    "name": "Material Design icons",
+    "projectUrl": "http://google.github.io/material-design-icons/",
+    "license": "Apache License Version 2.0",
+    "licenseUrl": "https://github.com/google/material-design-icons/blob/master/LICENSE"
+  },
+  {
+    "id": "ti",
+    "name": "Typicons",
+    "projectUrl": "http://s-ings.com/typicons/",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+  },
+  {
+    "id": "go",
+    "name": "Github Octicons icons",
+    "projectUrl": "https://octicons.github.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/primer/octicons/blob/master/LICENSE"
+  },
+  {
+    "id": "fi",
+    "name": "Feather",
+    "projectUrl": "https://feathericons.com/",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/feathericons/feather/blob/master/LICENSE"
+  },
+  {
+    "id": "gi",
+    "name": "Game Icons",
+    "projectUrl": "https://game-icons.net/",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/"
+  },
+  {
+    "id": "wi",
+    "name": "Weather Icons",
+    "projectUrl": "https://erikflowers.github.io/weather-icons/",
+    "license": "SIL OFL 1.1",
+    "licenseUrl": "http://scripts.sil.org/OFL"
+  },
+  {
+    "id": "di",
+    "name": "Devicons",
+    "projectUrl": "https://vorillaz.github.io/devicons/",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "ai",
+    "name": "Ant Design Icons",
+    "projectUrl": "https://github.com/ant-design/ant-design-icons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "bs",
+    "name": "Bootstrap Icons",
+    "projectUrl": "https://github.com/twbs/icons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "ri",
+    "name": "Remix Icon",
+    "projectUrl": "https://github.com/Remix-Design/RemixIcon",
+    "license": "Apache License Version 2.0",
+    "licenseUrl": "http://www.apache.org/licenses/"
+  },
+  {
+    "id": "fc",
+    "name": "Flat Color Icons",
+    "projectUrl": "https://github.com/icons8/flat-color-icons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "gr",
+    "name": "Grommet-Icons",
+    "projectUrl": "https://github.com/grommet/grommet-icons",
+    "license": "Apache License Version 2.0",
+    "licenseUrl": "http://www.apache.org/licenses/"
+  },
+  {
+    "id": "hi",
+    "name": "Heroicons",
+    "projectUrl": "https://github.com/refactoringui/heroicons",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "si",
+    "name": "Simple Icons",
+    "projectUrl": "https://simpleicons.org/",
+    "license": "CC0 1.0 Universal",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+  },
+  {
+    "id": "im",
+    "name": "IcoMoon Free",
+    "projectUrl": "https://github.com/Keyamoon/IcoMoon-Free",
+    "license": "CC BY 4.0 License"
+  },
+  {
+    "id": "bi",
+    "name": "BoxIcons",
+    "projectUrl": "https://github.com/atisawd/boxicons",
+    "license": "CC BY 4.0 License"
+  },
+  {
+    "id": "cg",
+    "name": "css.gg",
+    "projectUrl": "https://github.com/astrit/css.gg",
+    "license": "MIT",
+    "licenseUrl": "https://opensource.org/licenses/MIT"
+  },
+  {
+    "id": "vsc",
+    "name": "VS Code Icons",
+    "projectUrl": "https://github.com/microsoft/vscode-codicons",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+  }
+]
+// EXTERNAL MODULE: external "/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/preact/compat/dist/compat.js"
+var compat_js_ = __webpack_require__(8821);
+var compat_js_default = /*#__PURE__*/__webpack_require__.n(compat_js_);
+;// CONCATENATED MODULE: ./node_modules/@react-icons/all-files/lib/esm/iconContext.js
+
+var DefaultContext = {
+  color: undefined,
+  size: undefined,
+  className: undefined,
+  style: undefined,
+  attr: undefined
+};
+var IconContext = (compat_js_default()).createContext && compat_js_default().createContext(DefaultContext);
+;// CONCATENATED MODULE: ./node_modules/@react-icons/all-files/lib/esm/iconBase.js
+var __assign = undefined && undefined.__assign || function () {
+  __assign = Object.assign || function (t) {
+    for (var s, i = 1, n = arguments.length; i < n; i++) {
+      s = arguments[i];
+
+      for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p)) t[p] = s[p];
+    }
+
+    return t;
+  };
+
+  return __assign.apply(this, arguments);
+};
+
+var __rest = undefined && undefined.__rest || function (s, e) {
+  var t = {};
+
+  for (var p in s) if (Object.prototype.hasOwnProperty.call(s, p) && e.indexOf(p) < 0) t[p] = s[p];
+
+  if (s != null && typeof Object.getOwnPropertySymbols === "function") for (var i = 0, p = Object.getOwnPropertySymbols(s); i < p.length; i++) {
+    if (e.indexOf(p[i]) < 0 && Object.prototype.propertyIsEnumerable.call(s, p[i])) t[p[i]] = s[p[i]];
+  }
+  return t;
+};
+
+
+
+
+function Tree2Element(tree) {
+  return tree && tree.map(function (node, i) {
+    return compat_js_default().createElement(node.tag, __assign({
+      key: i
+    }, node.attr), Tree2Element(node.child));
+  });
+}
+
+function GenIcon(data) {
+  return function (props) {
+    return compat_js_default().createElement(IconBase, __assign({
+      attr: __assign({}, data.attr)
+    }, props), Tree2Element(data.child));
+  };
+}
+function IconBase(props) {
+  var elem = function (conf) {
+    var attr = props.attr,
+        size = props.size,
+        title = props.title,
+        svgProps = __rest(props, ["attr", "size", "title"]);
+
+    var computedSize = size || conf.size || "1em";
+    var className;
+    if (conf.className) className = conf.className;
+    if (props.className) className = (className ? className + ' ' : '') + props.className;
+    return compat_js_default().createElement("svg", __assign({
+      stroke: "currentColor",
+      fill: "currentColor",
+      strokeWidth: "0"
+    }, conf.attr, attr, svgProps, {
+      className: className,
+      style: __assign(__assign({
+        color: props.color || conf.color
+      }, conf.style), props.style),
+      height: computedSize,
+      width: computedSize,
+      xmlns: "http://www.w3.org/2000/svg"
+    }), title && compat_js_default().createElement("title", null, title), props.children);
+  };
+
+  return IconContext !== undefined ? compat_js_default().createElement(IconContext.Consumer, null, function (conf) {
+    return elem(conf);
+  }) : elem(DefaultContext);
+}
+;// CONCATENATED MODULE: ./node_modules/@react-icons/all-files/lib/esm/index.js
+
+
+
+
+/***/ }),
+
 /***/ 5623:
 /***/ ((module) => {
 
@@ -2527,7 +2817,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "apiRunner": () => (/* binding */ apiRunner),
 /* harmony export */   "apiRunnerAsync": () => (/* binding */ apiRunnerAsync)
 /* harmony export */ });
-var plugins=[{name:'gatsby-plugin-google-analytics',plugin:__webpack_require__(2754),options:{"plugins":[],"trackingId":"xxxxxxxxxxxxxxxxxx","head":false,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0,"enableWebVitalsTracking":false}},{name:'gatsby-plugin-image',plugin:__webpack_require__(2588),options:{"plugins":[]}},{name:'gatsby-plugin-react-helmet',plugin:__webpack_require__(1674),options:{"plugins":[]}},{name:'gatsby-plugin-feed',plugin:__webpack_require__(6155),options:{"plugins":[],"query":"\n\t\t\t\t{\n\t\t\t\t  site {\n            siteMetadata {\n              title\n              description\n              siteUrl\n              site_url: siteUrl\n            }\n\t\t\t\t  }\n\t\t\t\t}\n\t\t\t  ","feeds":[{"query":"\n\t\t\t\t\t{\n            allMdx(sort: {fields: [frontmatter___date], order: DESC}) {\n              nodes {\n                slug\n                frontmatter {\n                  title\n                  date\n                }\n                body\n                excerpt\n              }\n            }\n\t\t\t\t\t}\n\t\t\t\t  ","output":"/rss.xml","title":"Your Site's RSS Feed","match":"^/blog/"}]}},{name:'gatsby-plugin-sitemap',plugin:__webpack_require__(4988),options:{"plugins":[],"output":"/sitemap","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]}},{name:'gatsby-plugin-manifest',plugin:__webpack_require__(5822),options:{"plugins":[],"icon":"src/assets/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"53aa06cf17e4239d0dba6ffd09854e02"}},{name:'gatsby-plugin-mdx',plugin:__webpack_require__(2276),options:{"plugins":[],"extensions":[".mdx",".md"],"gatsbyRemarkPlugins":[{"resolve":"/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/gatsby-remark-images","id":"dcc5482e-3c13-53a4-9de3-f871bb9a928f","name":"gatsby-remark-images","version":"6.13.0","modulePath":"/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/gatsby-remark-images/index.js","pluginOptions":{"plugins":[],"maxWidth":640},"nodeAPIs":["pluginOptionsSchema"],"browserAPIs":["onRouteUpdate"],"ssrAPIs":[]}],"defaultLayouts":{},"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01","commonmark":false}},{name:'default-site-plugin',plugin:__webpack_require__(9759),options:{"plugins":[]}}];/* global plugins */ // During bootstrap, we write requires at top of this file which looks like:
+var plugins=[{name:'gatsby-plugin-google-analytics',plugin:__webpack_require__(2754),options:{"plugins":[],"trackingId":"xxxxxxxxxxxxxxxxxx","head":false,"anonymize":false,"respectDNT":false,"exclude":[],"pageTransitionDelay":0,"enableWebVitalsTracking":false}},{name:'gatsby-plugin-image',plugin:__webpack_require__(2588),options:{"plugins":[]}},{name:'gatsby-plugin-react-helmet',plugin:__webpack_require__(1674),options:{"plugins":[]}},{name:'gatsby-plugin-feed',plugin:__webpack_require__(6155),options:{"plugins":[],"query":"\n\t\t\t\t{\n\t\t\t\t  site {\n            siteMetadata {\n              title\n              description\n              siteUrl\n              site_url: siteUrl\n            }\n\t\t\t\t  }\n\t\t\t\t}\n\t\t\t  ","feeds":[{"query":"\n\t\t\t\t\t{\n            allMdx(sort: {fields: [frontmatter___date], order: DESC}) {\n              nodes {\n                slug\n                frontmatter {\n                  title\n                  date\n                }\n                body\n                excerpt\n              }\n            }\n\t\t\t\t\t}\n\t\t\t\t  ","output":"/rss.xml","title":"Your Site's RSS Feed","match":"^/blog/"}]}},{name:'gatsby-plugin-sitemap',plugin:__webpack_require__(4988),options:{"plugins":[],"output":"/sitemap","createLinkInHead":true,"entryLimit":45000,"query":"{ site { siteMetadata { siteUrl } } allSitePage { nodes { path } } }","excludes":[]}},{name:'gatsby-plugin-manifest',plugin:__webpack_require__(5822),options:{"plugins":[],"icon":"src/assets/images/icon.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"53aa06cf17e4239d0dba6ffd09854e02"}},{name:'gatsby-plugin-mdx',plugin:__webpack_require__(2276),options:{"plugins":[],"extensions":[".mdx",".md"],"gatsbyRemarkPlugins":[{"resolve":"/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/gatsby-remark-images","id":"dcc5482e-3c13-53a4-9de3-f871bb9a928f","name":"gatsby-remark-images","version":"6.14.0","modulePath":"/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01/node_modules/gatsby-remark-images/index.js","pluginOptions":{"plugins":[],"maxWidth":640},"nodeAPIs":["pluginOptionsSchema"],"browserAPIs":["onRouteUpdate"],"ssrAPIs":[]}],"defaultLayouts":{},"lessBabel":false,"remarkPlugins":[],"rehypePlugins":[],"mediaTypes":["text/markdown","text/x-markdown"],"root":"/Users/andreaseracleous/Documents/Work Environment/Personal/Themes/gatsby-blog-theme-01","commonmark":false}},{name:'default-site-plugin',plugin:__webpack_require__(9759),options:{"plugins":[]}}];/* global plugins */ // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
 //     plugin: require("/path/to/plugin1/gatsby-ssr.js"),
@@ -3381,7 +3671,7 @@ function globUnescape(s){return s.replace(/\\(.)/g,'$1');}function regExpEscape(
 /***/ 2588:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
-var React=__webpack_require__(8821);var commonTags=__webpack_require__(5863);function _interopNamespace(e){if(e&&e.__esModule)return e;var n=Object.create(null);if(e){Object.keys(e).forEach(function(k){if(k!=='default'){var d=Object.getOwnPropertyDescriptor(e,k);Object.defineProperty(n,k,d.get?d:{enumerable:true,get:function(){return e[k];}});}});}n["default"]=e;return n;}var React__namespace=/*#__PURE__*/_interopNamespace(React);var generateHtml=function generateHtml(str){return{__html:commonTags.oneLine(str)};};function onRenderBody(_ref){var setHeadComponents=_ref.setHeadComponents;setHeadComponents([React__namespace.createElement("style",{key:"gatsby-image-style",dangerouslySetInnerHTML:generateHtml(".gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}")}),React__namespace.createElement("noscript",{key:"gatsby-image-style-noscript",dangerouslySetInnerHTML:generateHtml("<style>"+".gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}"+"</style>")}),React__namespace.createElement("script",{key:"gatsby-image-style-script",type:"module",dangerouslySetInnerHTML:generateHtml("const e=\"undefined\"!=typeof HTMLImageElement&&\"loading\"in HTMLImageElement.prototype;e&&document.body.addEventListener(\"load\",(function(e){if(void 0===e.target.dataset.mainImage)return;if(void 0===e.target.dataset.gatsbyImageSsr)return;const t=e.target;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector(\"[data-placeholder-image]\"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition=\"opacity 500ms linear\")}))}),!0);")})]);}exports.onRenderBody=onRenderBody;
+var React=__webpack_require__(8821);var commonTags=__webpack_require__(5863);function _interopNamespace(e){if(e&&e.__esModule)return e;var n=Object.create(null);if(e){Object.keys(e).forEach(function(k){if(k!=='default'){var d=Object.getOwnPropertyDescriptor(e,k);Object.defineProperty(n,k,d.get?d:{enumerable:true,get:function(){return e[k];}});}});}n["default"]=e;return n;}var React__namespace=/*#__PURE__*/_interopNamespace(React);var generateHtml=function generateHtml(str){return{__html:commonTags.oneLine(str)};};function onRenderBody(_ref){var setHeadComponents=_ref.setHeadComponents;setHeadComponents([React__namespace.createElement("style",{key:"gatsby-image-style",dangerouslySetInnerHTML:generateHtml(".gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}")}),React__namespace.createElement("noscript",{key:"gatsby-image-style-noscript",dangerouslySetInnerHTML:generateHtml("<style>"+".gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}"+"</style>")}),React__namespace.createElement("script",{key:"gatsby-image-style-script",type:"module",dangerouslySetInnerHTML:generateHtml("const e=\"undefined\"!=typeof HTMLImageElement&&\"loading\"in HTMLImageElement.prototype;e&&document.body.addEventListener(\"load\",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector(\"[data-placeholder-image]\"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition=\"opacity 500ms linear\")}))}),!0);")})]);}exports.onRenderBody=onRenderBody;
 
 /***/ }),
 
@@ -3532,13 +3822,10 @@ module.exports={plugins:[]};
 /***/ }),
 
 /***/ 3128:
-/***/ ((module) => {
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 // const { FaTwitter, FaLinkedin, FaGithub } = require(`react-icons/fa`)
-// const { FaTwitter } = require(`@react-icons/all-files/fa/FaTwitter`)
-// const { FaLinkedin } = require(`@react-icons/all-files/fa/FaLinkedin`)
-// const { FaGithub } = require(`@react-icons/all-files/fa/FaGithub`)
-module.exports._e={title:`FrontendDeveloper`,description:`This is my coding blog.`,lastBuildDate:new Date(Date.now()).toISOString(),authorName:`Andreas`,social:{twitter:`AndreasFrontDev`}};module.exports.yi={title:"Hey, I'm Andreas",seo_title:"Andreas Web developer",occupation:"Web developer",social_media:"  Follow me on:",blog_title:"Welcome to my blog.",blog_description:"I build things for the web. I'm focused on build lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",subscribe_form_btn:"Subscribe",subscribe_form_email:"Your email address",subscribe_description:"If you want to be updated when a new post is out, sign up!",subscribe_thankyou:"Thank you!",subscribe_msg:"You have successfully joined our subscriber list.",subscribe_url:"https://assets.mailerlite.com/jsonp/41128/forms/54218114393441507/subscribe"};module.exports.eU={twitter:null,linkedin:null,github:null};module.exports.bb={twitter:"https://twitter.com/AndreasFrontDev",linkedin:"https://cy.linkedin.com/in/andreaseracleous",github:"https://github.com/AndreasEracleous"};module.exports.DB=8;
+const{FaTwitter}=__webpack_require__(1362);const{FaLinkedin}=__webpack_require__(5337);const{FaGithub}=__webpack_require__(9211);module.exports._e={title:`FrontendDeveloper`,description:`This is my coding blog.`,lastBuildDate:new Date(Date.now()).toISOString(),authorName:`Andreas`,social:{twitter:`AndreasFrontDev`}};module.exports.yi={title:"Hey, I'm Andreas",seo_title:"Andreas Web developer",occupation:"Web developer",social_media:"  Follow me on:",blog_title:"Welcome to my blog.",blog_description:"I build things for the web. I'm focused on build lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.",subscribe_form_btn:"Subscribe",subscribe_form_email:"Your email address",subscribe_description:"If you want to be updated when a new post is out, sign up!",subscribe_thankyou:"Thank you!",subscribe_msg:"You have successfully joined our subscriber list.",subscribe_url:"https://assets.mailerlite.com/jsonp/41128/forms/54218114393441507/subscribe"};module.exports.eU={twitter:FaTwitter,linkedin:FaLinkedin,github:FaGithub};module.exports.bb={twitter:"https://twitter.com/AndreasFrontDev",linkedin:"https://cy.linkedin.com/in/andreaseracleous",github:"https://github.com/AndreasEracleous"};module.exports.DB=8;
 
 /***/ }),
 
@@ -6238,7 +6525,7 @@ function _defineProperty(obj, key, value) {
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"name":"gatsby","description":"Blazing fast modern site generator for React","version":"4.13.1","author":"Kyle Mathews <mathews.kyle@gmail.com>","bin":{"gatsby":"./cli.js"},"bugs":{"url":"https://github.com/gatsbyjs/gatsby/issues"},"dependencies":{"@babel/code-frame":"^7.14.0","@babel/core":"^7.15.5","@babel/eslint-parser":"^7.15.4","@babel/helper-plugin-utils":"^7.14.5","@babel/parser":"^7.15.5","@babel/runtime":"^7.15.4","@babel/traverse":"^7.15.4","@babel/types":"^7.15.4","@gatsbyjs/reach-router":"^1.3.6","@gatsbyjs/webpack-hot-middleware":"^2.25.2","@nodelib/fs.walk":"^1.2.8","@parcel/core":"^2.3.2","@pmmmwh/react-refresh-webpack-plugin":"^0.4.3","@types/http-proxy":"^1.17.7","@typescript-eslint/eslint-plugin":"^4.33.0","@typescript-eslint/parser":"^4.33.0","@vercel/webpack-asset-relocator-loader":"^1.7.0","address":"1.1.2","anser":"^2.1.0","autoprefixer":"^10.4.0","axios":"^0.21.1","babel-loader":"^8.2.3","babel-plugin-add-module-exports":"^1.0.4","babel-plugin-dynamic-import-node":"^2.3.3","babel-plugin-lodash":"^3.3.4","babel-plugin-remove-graphql-queries":"^4.13.0","babel-preset-gatsby":"^2.13.0","better-opn":"^2.1.1","bluebird":"^3.7.2","body-parser":"^1.19.0","browserslist":"^4.17.5","cache-manager":"^2.11.1","chalk":"^4.1.2","chokidar":"^3.5.2","common-tags":"^1.8.0","compression":"^1.7.4","cookie":"^0.4.1","core-js":"^3.17.2","cors":"^2.8.5","css-loader":"^5.2.7","css-minimizer-webpack-plugin":"^2.0.0","css.escape":"^1.5.1","date-fns":"^2.25.0","debug":"^3.2.7","deepmerge":"^4.2.2","detect-port":"^1.3.0","devcert":"^1.2.0","dotenv":"^8.6.0","enhanced-resolve":"^5.8.3","eslint":"^7.32.0","eslint-config-react-app":"^6.0.0","eslint-plugin-flowtype":"^5.10.0","eslint-plugin-graphql":"^4.0.0","eslint-plugin-import":"^2.25.4","eslint-plugin-jsx-a11y":"^6.5.1","eslint-plugin-react":"^7.29.4","eslint-plugin-react-hooks":"^4.4.0","eslint-webpack-plugin":"^2.6.0","event-source-polyfill":"^1.0.25","execa":"^5.1.1","express":"^4.17.1","express-graphql":"^0.12.0","fastest-levenshtein":"^1.0.12","fastq":"^1.13.0","file-loader":"^6.2.0","find-cache-dir":"^3.3.2","fs-exists-cached":"1.0.0","fs-extra":"^10.0.0","gatsby-cli":"^4.13.0","gatsby-core-utils":"^3.13.0","gatsby-graphiql-explorer":"^2.13.0","gatsby-legacy-polyfills":"^2.13.0","gatsby-link":"^4.13.0","gatsby-page-utils":"^2.13.0","gatsby-parcel-config":"^0.4.0","gatsby-plugin-page-creator":"^4.13.0","gatsby-plugin-typescript":"^4.13.0","gatsby-plugin-utils":"^3.7.0","gatsby-react-router-scroll":"^5.13.0","gatsby-telemetry":"^3.13.0","gatsby-worker":"^1.13.0","glob":"^7.2.0","globby":"^11.1.0","got":"^11.8.2","graphql":"^15.7.2","graphql-compose":"^9.0.7","graphql-playground-middleware-express":"^1.7.22","hasha":"^5.2.2","http-proxy":"^1.18.1","invariant":"^2.2.4","is-relative":"^1.0.0","is-relative-url":"^3.0.0","joi":"^17.4.2","json-loader":"^0.5.7","latest-version":"5.1.0","lmdb":"~2.2.3","lodash":"^4.17.21","md5-file":"^5.0.0","meant":"^1.0.3","memoizee":"^0.4.15","micromatch":"^4.0.4","mime":"^2.5.2","mini-css-extract-plugin":"1.6.2","mitt":"^1.2.0","moment":"^2.29.1","multer":"^1.4.3","node-fetch":"^2.6.6","normalize-path":"^3.0.0","null-loader":"^4.0.1","opentracing":"^0.14.5","p-defer":"^3.0.0","parseurl":"^1.3.3","physical-cpu-count":"^2.0.0","platform":"^1.3.6","postcss":"^8.3.11","postcss-flexbugs-fixes":"^5.0.2","postcss-loader":"^5.3.0","prompts":"^2.4.2","prop-types":"^15.7.2","query-string":"^6.14.1","raw-loader":"^4.0.2","react-dev-utils":"^11.0.4","react-refresh":"^0.9.0","redux":"4.1.2","redux-thunk":"^2.4.0","resolve-from":"^5.0.0","semver":"^7.3.5","shallow-compare":"^1.2.2","signal-exit":"^3.0.5","slugify":"^1.6.1","socket.io":"3.1.2","socket.io-client":"3.1.3","source-map":"^0.7.3","source-map-support":"^0.5.20","st":"^2.0.0","stack-trace":"^0.0.10","string-similarity":"^1.2.2","strip-ansi":"^6.0.1","style-loader":"^2.0.0","terser-webpack-plugin":"^5.2.4","tmp":"^0.2.1","true-case-path":"^2.2.1","type-of":"^2.0.1","url-loader":"^4.1.1","uuid":"^8.3.2","webpack":"^5.61.0","webpack-dev-middleware":"^4.3.0","webpack-merge":"^5.8.0","webpack-stats-plugin":"^1.0.3","webpack-virtual-modules":"^0.3.2","xstate":"^4.26.0","yaml-loader":"^0.6.0"},"devDependencies":{"@babel/cli":"^7.15.4","@babel/helper-plugin-utils":"^7.14.5","@babel/register":"^7.15.3","@types/eslint":"^8.2.1","@types/express":"^4.17.13","@types/micromatch":"^4.0.1","@types/normalize-path":"^3.0.0","@types/reach__router":"^1.3.5","@types/react-dom":"^17.0.9","@types/semver":"^7.3.9","@types/sharp":"^0.30.0","@types/signal-exit":"^3.0.0","@types/string-similarity":"^4.0.0","@types/tmp":"^0.2.0","@types/webpack-virtual-modules":"^0.1.1","babel-preset-gatsby-package":"^2.13.0","copyfiles":"^2.3.0","cross-env":"^7.0.3","documentation":"^13.1.0","react":"^16.12.0","react-dom":"^16.12.0","rimraf":"^3.0.2","typescript":"^4.5.5","xhr-mock":"^2.5.1","zipkin":"^0.22.0","zipkin-javascript-opentracing":"^3.0.0","zipkin-transport-http":"^0.22.0"},"optionalDependencies":{"gatsby-sharp":"^0.7.0"},"engines":{"node":">=14.15.0"},"files":["apis.json","ipc.json","cache-dir/","cli.js","dist/","graphql.js","graphql.d.ts","reporter.js","reporter.d.ts","index.d.ts","scripts/postinstall.js","utils.js","internal.js","internal.d.ts","webpack.js","webpack.d.ts","!**/__tests__/"],"homepage":"https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby#readme","keywords":["blog","generator","jekyll","markdown","react","ssg","website"],"license":"MIT","main":"cache-dir/commonjs/gatsby-browser-entry.js","module":"cache-dir/gatsby-browser-entry.js","peerDependencies":{"react":"^16.9.0 || ^17.0.0 || ^18.0.0","react-dom":"^16.9.0 || ^17.0.0 || ^18.0.0"},"repository":{"type":"git","url":"git+https://github.com/gatsbyjs/gatsby.git"},"resolutions":{"graphql":"^15.8.0","@mdx-js/mdx":"^2.0.0-next.3","@mdx-js/react":"^2.0.0-next.3","@mdx-js/runtime":"^2.0.0-next.3","remark-mdx":"2.0.0-next.7","remark-mdxjs":"^2.0.0-next.3"},"scripts":{"build":"npm run build:types && npm run build:src && npm run build:internal-plugins && npm run build:rawfiles && npm run build:cjs","postbuild":"node scripts/output-api-file.js","build:internal-plugins":"copyfiles -u 1 src/internal-plugins/**/package.json dist","build:rawfiles":"copyfiles -u 1 src/internal-plugins/**/raw_* dist","build:cjs":"babel cache-dir --out-dir cache-dir/commonjs --ignore \\"**/__tests__\\" --ignore \\"**/__mocks__\\" && copyfiles -u 1 cache-dir/**/*.json cache-dir/commonjs","build:src":"babel src --out-dir dist --source-maps --verbose --ignore \\"**/gatsby-cli.js,src/internal-plugins/dev-404-page/raw_dev-404-page.js,**/__tests__,**/__mocks__\\" --extensions \\".ts,.js\\"","build:types":"tsc --emitDeclarationOnly --declaration --declarationDir dist && node scripts/check-declaration.js","clean-test-bundles":"find test/ -type f -name bundle.js* -exec rm -rf {} +","prebuild":"rimraf dist && rimraf cache-dir/commonjs","postinstall":"node scripts/postinstall.js","prepare":"cross-env NODE_ENV=production npm run build","watch":"rimraf dist && mkdir dist && npm run build:internal-plugins && npm run build:rawfiles && npm run build:src -- --watch","typecheck":"tsc --noEmit"},"types":"index.d.ts","yargs":{"boolean-negation":false},"gitHead":"d10b8b7ddfab9e0ec67dee8718dba376f1c380f1"}');
+module.exports = JSON.parse('{"name":"gatsby","description":"Blazing fast modern site generator for React","version":"4.14.0","author":"Kyle Mathews <mathews.kyle@gmail.com>","bin":{"gatsby":"./cli.js"},"bugs":{"url":"https://github.com/gatsbyjs/gatsby/issues"},"dependencies":{"@babel/code-frame":"^7.14.0","@babel/core":"^7.15.5","@babel/eslint-parser":"^7.15.4","@babel/helper-plugin-utils":"^7.14.5","@babel/parser":"^7.15.5","@babel/runtime":"^7.15.4","@babel/traverse":"^7.15.4","@babel/types":"^7.15.4","@gatsbyjs/reach-router":"^1.3.6","@gatsbyjs/webpack-hot-middleware":"^2.25.2","@graphql-codegen/add":"^3.1.1","@graphql-codegen/core":"^2.5.1","@graphql-codegen/plugin-helpers":"^2.4.2","@graphql-codegen/typescript":"^2.4.8","@graphql-codegen/typescript-operations":"^2.3.5","@graphql-tools/code-file-loader":"^7.2.14","@graphql-tools/load":"^7.5.10","@nodelib/fs.walk":"^1.2.8","@parcel/core":"^2.3.2","@pmmmwh/react-refresh-webpack-plugin":"^0.4.3","@types/http-proxy":"^1.17.7","@typescript-eslint/eslint-plugin":"^4.33.0","@typescript-eslint/parser":"^4.33.0","@vercel/webpack-asset-relocator-loader":"^1.7.0","address":"1.1.2","anser":"^2.1.0","autoprefixer":"^10.4.0","axios":"^0.21.1","babel-loader":"^8.2.3","babel-plugin-add-module-exports":"^1.0.4","babel-plugin-dynamic-import-node":"^2.3.3","babel-plugin-lodash":"^3.3.4","babel-plugin-remove-graphql-queries":"^4.14.0","babel-preset-gatsby":"^2.14.0","better-opn":"^2.1.1","bluebird":"^3.7.2","body-parser":"^1.19.0","browserslist":"^4.17.5","cache-manager":"^2.11.1","chalk":"^4.1.2","chokidar":"^3.5.2","common-tags":"^1.8.0","compression":"^1.7.4","cookie":"^0.4.1","core-js":"^3.22.3","cors":"^2.8.5","css-loader":"^5.2.7","css-minimizer-webpack-plugin":"^2.0.0","css.escape":"^1.5.1","date-fns":"^2.25.0","debug":"^3.2.7","deepmerge":"^4.2.2","detect-port":"^1.3.0","devcert":"^1.2.0","dotenv":"^8.6.0","enhanced-resolve":"^5.8.3","eslint":"^7.32.0","eslint-config-react-app":"^6.0.0","eslint-plugin-flowtype":"^5.10.0","eslint-plugin-graphql":"^4.0.0","eslint-plugin-import":"^2.26.0","eslint-plugin-jsx-a11y":"^6.5.1","eslint-plugin-react":"^7.29.4","eslint-plugin-react-hooks":"^4.5.0","eslint-webpack-plugin":"^2.6.0","event-source-polyfill":"1.0.25","execa":"^5.1.1","express":"^4.17.1","express-graphql":"^0.12.0","fastest-levenshtein":"^1.0.12","fastq":"^1.13.0","file-loader":"^6.2.0","find-cache-dir":"^3.3.2","fs-exists-cached":"1.0.0","fs-extra":"^10.1.0","gatsby-cli":"^4.14.0","gatsby-core-utils":"^3.14.0","gatsby-graphiql-explorer":"^2.14.0","gatsby-legacy-polyfills":"^2.14.0","gatsby-link":"^4.14.0","gatsby-page-utils":"^2.14.0","gatsby-parcel-config":"^0.5.0","gatsby-plugin-page-creator":"^4.14.0","gatsby-plugin-typescript":"^4.14.0","gatsby-plugin-utils":"^3.8.0","gatsby-react-router-scroll":"^5.14.0","gatsby-telemetry":"^3.14.0","gatsby-worker":"^1.14.0","glob":"^7.2.0","globby":"^11.1.0","got":"^11.8.2","graphql":"^15.7.2","graphql-compose":"^9.0.7","graphql-playground-middleware-express":"^1.7.22","hasha":"^5.2.2","http-proxy":"^1.18.1","invariant":"^2.2.4","is-relative":"^1.0.0","is-relative-url":"^3.0.0","joi":"^17.4.2","json-loader":"^0.5.7","latest-version":"5.1.0","lmdb":"~2.2.3","lodash":"^4.17.21","md5-file":"^5.0.0","meant":"^1.0.3","memoizee":"^0.4.15","micromatch":"^4.0.4","mime":"^2.5.2","mini-css-extract-plugin":"1.6.2","mitt":"^1.2.0","moment":"^2.29.1","multer":"^1.4.3","node-fetch":"^2.6.6","normalize-path":"^3.0.0","null-loader":"^4.0.1","opentracing":"^0.14.5","p-defer":"^3.0.0","parseurl":"^1.3.3","physical-cpu-count":"^2.0.0","platform":"^1.3.6","postcss":"^8.3.11","postcss-flexbugs-fixes":"^5.0.2","postcss-loader":"^5.3.0","prompts":"^2.4.2","prop-types":"^15.7.2","query-string":"^6.14.1","raw-loader":"^4.0.2","react-dev-utils":"^12.0.1","react-refresh":"^0.9.0","redux":"4.1.2","redux-thunk":"^2.4.0","resolve-from":"^5.0.0","semver":"^7.3.7","shallow-compare":"^1.2.2","signal-exit":"^3.0.5","slugify":"^1.6.1","socket.io":"3.1.2","socket.io-client":"3.1.3","source-map":"^0.7.3","source-map-support":"^0.5.20","st":"^2.0.0","stack-trace":"^0.0.10","string-similarity":"^1.2.2","strip-ansi":"^6.0.1","style-loader":"^2.0.0","terser-webpack-plugin":"^5.2.4","tmp":"^0.2.1","true-case-path":"^2.2.1","type-of":"^2.0.1","url-loader":"^4.1.1","uuid":"^8.3.2","webpack":"^5.61.0","webpack-dev-middleware":"^4.3.0","webpack-merge":"^5.8.0","webpack-stats-plugin":"^1.0.3","webpack-virtual-modules":"^0.3.2","xstate":"^4.26.0","yaml-loader":"^0.6.0"},"devDependencies":{"@babel/cli":"^7.15.4","@babel/helper-plugin-utils":"^7.14.5","@babel/register":"^7.15.3","@types/eslint":"^8.2.1","@types/express":"^4.17.13","@types/micromatch":"^4.0.1","@types/normalize-path":"^3.0.0","@types/reach__router":"^1.3.5","@types/react-dom":"^17.0.9","@types/semver":"^7.3.9","@types/sharp":"^0.30.0","@types/signal-exit":"^3.0.0","@types/string-similarity":"^4.0.0","@types/tmp":"^0.2.0","@types/webpack-virtual-modules":"^0.1.1","babel-preset-gatsby-package":"^2.14.0","copyfiles":"^2.3.0","cross-env":"^7.0.3","documentation":"^13.1.0","react":"^16.12.0","react-dom":"^16.12.0","rimraf":"^3.0.2","typescript":"^4.6.4","xhr-mock":"^2.5.1","zipkin":"^0.22.0","zipkin-javascript-opentracing":"^3.0.0","zipkin-transport-http":"^0.22.0"},"optionalDependencies":{"gatsby-sharp":"^0.8.0"},"engines":{"node":">=14.15.0"},"files":["apis.json","ipc.json","cache-dir/","cli.js","dist/","graphql.js","graphql.d.ts","reporter.js","reporter.d.ts","index.d.ts","scripts/postinstall.js","utils.js","internal.js","internal.d.ts","webpack.js","webpack.d.ts","!**/__tests__/"],"homepage":"https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby#readme","keywords":["blog","generator","jekyll","markdown","react","ssg","website"],"license":"MIT","main":"cache-dir/commonjs/gatsby-browser-entry.js","module":"cache-dir/gatsby-browser-entry.js","peerDependencies":{"react":"^16.9.0 || ^17.0.0 || ^18.0.0","react-dom":"^16.9.0 || ^17.0.0 || ^18.0.0"},"repository":{"type":"git","url":"git+https://github.com/gatsbyjs/gatsby.git"},"resolutions":{"graphql":"^15.8.0","@mdx-js/mdx":"^2.0.0-next.3","@mdx-js/react":"^2.0.0-next.3","@mdx-js/runtime":"^2.0.0-next.3","remark-mdx":"2.0.0-next.7","remark-mdxjs":"^2.0.0-next.3"},"scripts":{"build":"npm run build:types && npm run build:src && npm run build:internal-plugins && npm run build:rawfiles && npm run build:cjs","postbuild":"node scripts/output-api-file.js","build:internal-plugins":"copyfiles -u 1 src/internal-plugins/**/package.json dist","build:rawfiles":"copyfiles -u 1 src/internal-plugins/**/raw_* dist","build:cjs":"babel cache-dir --out-dir cache-dir/commonjs --ignore \\"**/__tests__\\" --ignore \\"**/__mocks__\\" && copyfiles -u 1 cache-dir/**/*.json cache-dir/commonjs","build:src":"babel src --out-dir dist --source-maps --verbose --ignore \\"**/gatsby-cli.js,src/internal-plugins/dev-404-page/raw_dev-404-page.js,**/__tests__,**/__mocks__\\" --extensions \\".ts,.js\\"","build:types":"tsc --emitDeclarationOnly --declaration --declarationDir dist && node scripts/check-declaration.js","clean-test-bundles":"find test/ -type f -name bundle.js* -exec rm -rf {} +","prebuild":"rimraf dist && rimraf cache-dir/commonjs","postinstall":"node scripts/postinstall.js","prepare":"cross-env NODE_ENV=production npm run build","watch":"rimraf dist && mkdir dist && npm run build:internal-plugins && npm run build:rawfiles && npm run build:src -- --watch","typecheck":"tsc --noEmit"},"types":"index.d.ts","yargs":{"boolean-negation":false},"gitHead":"2c324f6d521dcbae6c98f4af48b9a695e9dee861"}');
 
 /***/ }),
 
@@ -6246,7 +6533,7 @@ module.exports = JSON.parse('{"name":"gatsby","description":"Blazing fast modern
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"polyfill":["/polyfill-ba8dad517f02e97f3fc8.js"],"app":["/app-fbb75e60feffe8dfc031.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-47c41fb25f5e57b45f20.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-eb8aa79753b070be5f52.js"],"component---src-templates-blog-post-jsx":["/component---src-templates-blog-post-jsx-12bcc221186b2b7d486b.js"]}');
+module.exports = JSON.parse('{"polyfill":["/polyfill-ba8dad517f02e97f3fc8.js"],"app":["/app-ebbbfd6257393a42b949.js"],"component---src-pages-404-jsx":["/component---src-pages-404-jsx-3c2daf03078a4a901633.js"],"component---src-pages-index-jsx":["/component---src-pages-index-jsx-20fee420fd022bdd9fe2.js"],"component---src-templates-blog-post-jsx":["/component---src-templates-blog-post-jsx-090237266d0b9f851baf.js"]}');
 
 /***/ })
 
@@ -6414,8 +6701,8 @@ bodyProps=deepMerge({},bodyProps,props);};const getHeadComponents=()=>headCompon
 await apiRunnerAsync(`replaceRenderer`,{bodyComponent,replaceBodyHTMLString,setHeadComponents,setHtmlAttributes,setBodyAttributes,setPreBodyComponents,setPostBodyComponents,setBodyProps,pathname:pagePath,pathPrefix:""});// If no one stepped up, we'll handle it.
 if(!bodyHtml){try{// react 18 enabled
 if(false){}else{bodyHtml=renderToString(bodyComponent);}}catch(e){// ignore @reach/router redirect errors
-if(!isRedirect(e))throw e;}}apiRunner(`onRenderBody`,{setHeadComponents,setHtmlAttributes,setBodyAttributes,setPreBodyComponents,setPostBodyComponents,setBodyProps,pathname:pagePath,loadPageDataSync,bodyHtml,scripts,styles,pathPrefix:""});reversedScripts.forEach(script=>{// Add preload/prefetch <link>s for scripts.
-headComponents.push(/*#__PURE__*/React.createElement("link",{as:"script",rel:script.rel,key:script.name,href:`${""}/${script.name}`}));});if(pageData&&!inlinePageData){headComponents.push(/*#__PURE__*/React.createElement("link",{as:"fetch",rel:"preload",key:pageDataUrl,href:pageDataUrl,crossOrigin:"anonymous"}));}staticQueryUrls.forEach(staticQueryUrl=>headComponents.push(/*#__PURE__*/React.createElement("link",{as:"fetch",rel:"preload",key:staticQueryUrl,href:staticQueryUrl,crossOrigin:"anonymous"})));const appDataUrl=getAppDataUrl();if(appDataUrl){headComponents.push(/*#__PURE__*/React.createElement("link",{as:"fetch",rel:"preload",key:appDataUrl,href:appDataUrl,crossOrigin:"anonymous"}));}reversedStyles.forEach(style=>{// Add <link>s for styles that should be prefetched
+if(!isRedirect(e))throw e;}}apiRunner(`onRenderBody`,{setHeadComponents,setHtmlAttributes,setBodyAttributes,setPreBodyComponents,setPostBodyComponents,setBodyProps,pathname:pagePath,loadPageDataSync,bodyHtml,scripts,styles,pathPrefix:""});reversedScripts.forEach(script=>{// Add preload/prefetch <link>s magic comments
+if(script.shouldGenerateLink){headComponents.push(/*#__PURE__*/React.createElement("link",{as:"script",rel:script.rel,key:script.name,href:`${""}/${script.name}`}));}});reversedStyles.forEach(style=>{// Add <link>s for styles that should be prefetched
 // otherwise, inline as a <style> tag
 if(style.rel===`prefetch`){headComponents.push(/*#__PURE__*/React.createElement("link",{as:"style",rel:style.rel,key:style.name,href:`${""}/${style.name}`}));}else{headComponents.unshift(/*#__PURE__*/React.createElement("style",{"data-href":`${""}/${style.name}`,"data-identity":`gatsby-global-css`,dangerouslySetInnerHTML:{__html:style.content}}));}});// Add page metadata for the current page
 const windowPageData=`/*<![CDATA[*/window.pagePath="${pagePath}";window.___webpackCompilationHash="${webpackCompilationHash}";${inlinePageData?`window.pageData=${JSON.stringify(pageData)};`:``}/*]]>*/`;postBodyComponents.push(/*#__PURE__*/React.createElement("script",{key:`script-loader`,id:`gatsby-script-loader`,dangerouslySetInnerHTML:{__html:windowPageData}}));// Add chunk mapping metadata
