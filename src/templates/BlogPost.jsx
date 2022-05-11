@@ -1,19 +1,19 @@
-import { graphql } from "gatsby";
-import React from "react";
-import Seo from "../components/Seo";
-import PostLayout from "../components/PostLayout";
+import { graphql } from "gatsby"
+import React from "react"
+import Seo from "../components/Seo"
+import PostLayout from "../components/PostLayout"
 
 const BlogPost = ({ data, pageContext }) => {
   const {
     id,
     body,
     frontmatter: { featuredImage, title, date, datetime },
-  } = data.mdx;
+  } = data.mdx
 
   return (
     <>
       <Seo title={title} />
-      <hr className="border-gray-light mb-8" />
+      <hr className="border-gray-200 mb-8" />
       <PostLayout
         featuredImage={featuredImage}
         title={title}
@@ -25,10 +25,10 @@ const BlogPost = ({ data, pageContext }) => {
         key={id}
       />
     </>
-  );
-};
+  )
+}
 
-export default BlogPost;
+export default BlogPost
 
 export const query = graphql`
   query BLOG_POST_BY_SLUG(
@@ -64,4 +64,4 @@ export const query = graphql`
       }
     }
   }
-`;
+`

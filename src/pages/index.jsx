@@ -2,7 +2,7 @@ import { graphql } from "gatsby"
 import React from "react"
 import Seo from "../components/Seo"
 import PostListLayout from "../components/PostListLayout"
-import SubscribeForm from "../components/SubscribeForm"
+import NewsletterForm from "../components/NewsletterForm"
 import SocialMedia from "../components/SocialMedia"
 import { PAGE_CONTENT } from "../config/constants"
 
@@ -20,7 +20,7 @@ const IndexPage = ({ data, location }) => {
     <h1 className="max-w-5xl tracking-tight text-black text-5xl font-bold lg:text-6xl xl:text-7xl">
       {title},
       <br />
-      <span className="text-blue">{occupation}</span>.
+      <span className="text-blue-500">{occupation}</span>.
     </h1>
   )
 
@@ -36,7 +36,7 @@ const IndexPage = ({ data, location }) => {
       <Seo title={seoTitle} />
       {intro}
       {welcome}
-      <SubscribeForm actionUrl={subscribeURL} />
+      <NewsletterForm actionUrl={subscribeURL} />
       <SocialMedia
         className="flex space-x-4 mt-3 ml-3"
         text={socialMediaText}

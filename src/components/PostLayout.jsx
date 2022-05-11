@@ -1,8 +1,8 @@
-import { Link } from "gatsby";
-import React from "react";
-import { MDXRenderer } from "gatsby-plugin-mdx";
+import { Link } from "gatsby"
+import React from "react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
-import Image from "./Image";
+import Image from "./Image"
 
 const PostLayout = ({
   featuredImage,
@@ -13,22 +13,22 @@ const PostLayout = ({
   previous,
   next,
 }) => {
-  let previousLink;
-  let nextLink;
+  let previousLink
+  let nextLink
 
   if (previous && previous?.slug) {
     previousLink = (
       <Link className="pagination-prev" to={`/${previous.slug}`}>
         {previous.frontmatter.title}
       </Link>
-    );
+    )
   }
   if (next && next?.slug) {
     nextLink = (
       <Link className="pagination-next" to={`/${next.slug}`}>
         {next.frontmatter.title}
       </Link>
-    );
+    )
   }
 
   return (
@@ -41,20 +41,20 @@ const PostLayout = ({
         />
 
         <header className="mb-5">
-          <time className="block text-gray mb-2" dateTime={datetime}>
+          <time className="block text-gray-500 mb-2" dateTime={datetime}>
             {date}
           </time>
           <h1 className="text-5xl font-semibold capitalize">{title}</h1>
         </header>
         <MDXRenderer>{content}</MDXRenderer>
       </article>
-      <hr className="my-5" />
+      <hr className="my-5 border-gray-200" />
       <div className="flex justify-between">
         {previousLink}
         {nextLink}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default PostLayout;
+export default PostLayout

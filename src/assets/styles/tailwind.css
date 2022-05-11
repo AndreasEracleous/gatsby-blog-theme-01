@@ -9,7 +9,7 @@
   /* Pagination */
   .pagination-prev,
   .pagination-next {
-    @apply text-blue p-3 text-base font-semibold capitalize border border-transparent hover:border-gray hover:rounded max-w-sm;
+    @apply text-blue-500 p-3 text-base font-semibold capitalize border border-transparent hover:border-gray-500 hover:rounded max-w-sm;
   }
 
   .pagination-next {
@@ -18,12 +18,12 @@
 
   .pagination-prev:before {
     content: "← Previously ";
-    @apply block text-gray text-sm uppercase font-normal;
+    @apply block text-gray-500 text-sm uppercase font-normal;
   }
 
   .pagination-next:before {
     content: "Up next →";
-    @apply block text-gray text-sm uppercase font-normal;
+    @apply block text-gray-500 text-sm uppercase font-normal;
   }
 }
 

@@ -45,16 +45,14 @@
     @apply my-10 shadow-lg;
   }
   code {
-    @apply rounded block bg-gray text-white p-10;
+    @apply rounded block bg-gray-700 text-white p-10;
   }
   ul {
     @apply list-disc list-outside pl-10;
   }
-
   ol {
     @apply list-decimal pl-10;
   }
-
   li {
     @apply my-2;
   }

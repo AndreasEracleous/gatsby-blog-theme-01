@@ -11,16 +11,16 @@ const Footer = () => {
     <footer className="mt-20 mb-5">
       <nav className="flex space-x-4">
         <Link
-          className="text-gray text-base hover:underline"
+          className="text-gray-500 text-base hover:underline"
           to="/sitemap/sitemap-index.xml"
         >
           Sitemap
         </Link>
-        <Link className="text-gray text-base hover:underline" to="/rss.xml">
+        <Link className="text-gray-500 text-base hover:underline" to="/rss.xml">
           RSS
         </Link>
         <a
-          className="text-gray text-base hover:underline"
+          className="text-gray-500 text-base hover:underline"
           href={twitterURL}
           aria-label="Twitter"
           target="_blank"
@@ -29,7 +29,7 @@ const Footer = () => {
           Twitter
         </a>
         <a
-          className="text-gray text-base hover:underline"
+          className="text-gray-500 text-base hover:underline"
           href={linkedinURL}
           aria-label="Linkedin"
           target="_blank"
@@ -38,7 +38,7 @@ const Footer = () => {
           LinkedIn
         </a>
         <a
-          className="text-gray text-base hover:underline"
+          className="text-gray-500 text-base hover:underline"
           href={githubURL}
           aria-label="Github"
           target="_blank"

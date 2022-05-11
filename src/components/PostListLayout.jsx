@@ -1,28 +1,28 @@
-import { Link } from "gatsby";
-import React, { useRef, useMemo } from "react";
-import PropTypes from "prop-types";
-import Image from "./Image";
-import Pagination from "./Pagination";
-import { POSTS_PER_PAGE } from "../config/constants";
+import { Link } from "gatsby"
+import React, { useRef, useMemo } from "react"
+import PropTypes from "prop-types"
+import Image from "./Image"
+import Pagination from "./Pagination"
+import { POSTS_PER_PAGE } from "../config/constants"
 
 const chunkList = (list, size) => {
-  let length = list.length;
-  let chunked = [];
+  let length = list.length
+  let chunked = []
   Array.from({ length: Math.ceil(length / size) }, (val, i) => {
-    return chunked.push(list.slice(i * size, i * size + size));
-  });
-  return chunked;
-};
+    return chunked.push(list.slice(i * size, i * size + size))
+  })
+  return chunked
+}
 
 const PostListLayout = ({ data }) => {
-  const selectedDataIndex = useRef(0);
+  const selectedDataIndex = useRef(0)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  const memoizedData = useMemo(() => chunkList(data, POSTS_PER_PAGE), []);
-  const chunkPostLength = memoizedData.length;
+  const memoizedData = useMemo(() => chunkList(data, POSTS_PER_PAGE), [])
+  const chunkPostLength = memoizedData.length
 
-  const handlePaginationPage = (currentNum) => {
-    selectedDataIndex.current = currentNum;
-  };
+  const handlePaginationPage = currentNum => {
+    selectedDataIndex.current = currentNum
+  }
 
   const postCard = memoizedData[selectedDataIndex.current].map(
     ({ id, frontmatter, slug }, index) => (
@@ -40,7 +40,7 @@ const PostListLayout = ({ data }) => {
         </div>
         <header className="mt-2 px-5">
           <time
-            className="text-gray font-light text-base"
+            className="text-gray-500 font-light text-base"
             dateTime={frontmatter?.datetime}
           >
             {frontmatter?.date}
@@ -53,7 +53,7 @@ const PostListLayout = ({ data }) => {
         </header>
       </article>
     )
-  );
+  )
 
   return (
     <>
@@ -65,11 +65,11 @@ const PostListLayout = ({ data }) => {
         callBackResult={handlePaginationPage}
       />
     </>
-  );
-};
+  )
+}
 
 PostListLayout.propTypes = {
   data: PropTypes.array.isRequired,
-};
+}
 
-export default PostListLayout;
+export default PostListLayout
