@@ -148,14 +148,14 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/posts/blog/`,
+        path: `${__dirname}/src/content/`,
         name: `posts`,
       },
     },
     {
       resolve: "gatsby-plugin-page-creator",
       options: {
-        path: `${__dirname}/src/posts`,
+        path: `${__dirname}/src/content/blog`,
       },
     },
   ],
