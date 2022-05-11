@@ -1,4 +1,7 @@
-const { FaTwitter, FaLinkedin, FaGithub } = require(`react-icons/fa`)
+// const { FaTwitter, FaLinkedin, FaGithub } = require(`react-icons/fa`)
+const { FaTwitter } = require(`@react-icons/all-files/fa/FaTwitter`)
+const { FaLinkedin } = require(`@react-icons/all-files/fa/FaLinkedin`)
+const { FaGithub } = require(`@react-icons/all-files/fa/FaGithub`)
 
 module.exports.SITE_METADATA = {
   title: `FrontendDeveloper`,
