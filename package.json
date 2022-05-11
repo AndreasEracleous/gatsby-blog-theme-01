@@ -17,8 +17,8 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "@mdx-js/mdx": "v1",
-    "@mdx-js/react": "v1",
+    "@mdx-js/mdx": "^2.1.1",
+    "@mdx-js/react": "^2.1.1",
     "@react-icons/all-files": "^4.1.0",
     "gatsby": "^4.14.0",
     "gatsby-plugin-feed": "^4.13.0",
