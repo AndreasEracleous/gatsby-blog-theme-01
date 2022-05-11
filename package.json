@@ -54,6 +54,7 @@
     "tailwindcss": "^3.0.24"
   },
   "engines": {
-    "node": ">=v12"
+    "node": ">=12",
+    "yarn": ">=1.22"
   }
 }
