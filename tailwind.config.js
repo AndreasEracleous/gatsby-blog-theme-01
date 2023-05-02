@@ -1,27 +1,32 @@
-const colors = require("tailwindcss/colors")
+/* eslint-disable import/no-extraneous-dependencies, global-require */
+// const defaultTheme = require('tailwindcss/defaultTheme');
 
 module.exports = {
-  content: [],
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./src/content/**/*.{md, mdx}"],
-  theme: {
-    screens: {
-      sm: "480px",
-      md: "768px",
-      lg: "976px",
-      xl: "1280px",
-    },
-    colors: {
-      /* base colors */
-      ...colors,
-      blue: {
-        500: "#0091ea",
-      },
-    },
-    fontFamily: {
-      sans: ["Open Sans", "sans-serif"],
-      serif: ["Merriweather", "serif"],
-    },
-    extend: {},
+  content: [
+    './src/**/*.{js,jsx,ts,tsx}',
+    './src/posts/*.{md, mdx}',
+    './src/posts/**/*.{md, mdx}',
+    './src/posts/**/**/*.{md, mdx}',
+    './src/posts/**/**/**/*.{md, mdx}',
+  ],
+  corePlugins: {
+    preflight: true,
+    // container: false,
   },
-  plugins: [],
-}
+  theme: {
+    // TODO: Uncomment this part of the code and the import of "defaultTheme" above, and complete TODOs
+    fontFamily: {
+      poppins: ['Poppins', 'sans-serif'],
+    },
+    screens: {
+      '2xl': { max: '1320px' },
+      xl: { max: '1140px' },
+      lg: { max: '960px' },
+      md: { max: '720px' },
+      sm: { max: '540px' },
+      xs: { max: '359px' },
+    },
+  },
+  darkMode: 'class',
+  plugins: [require('tailwindcss-safe-area')],
+};

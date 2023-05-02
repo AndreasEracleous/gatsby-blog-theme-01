@@ -1,66 +1,240 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require('path');
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+const { POSTS_PER_PAGE } = require('./src/config/constants');
 
+const readingTime = require(`reading-time`);
+const slugify = require(`@sindresorhus/slugify`);
+const { compileMDXWithCustomOptions } = require(`gatsby-plugin-mdx`);
+const { remarkHeadingsPlugin } = require(`./remark-headings-plugin`);
+
+const langPrefix = (page) =>
+  page.context.language === page.context.i18n.defaultLanguage &&
+  !page.context.i18n.generateDefaultLanguagePage
+    ? ''
+    : `/${page.context.language}`;
+
+/*
+// remove default index.jsx for homepage and set a new one location
+exports.onCreatePage = ({ page, actions }) => {
+  const { deletePage, createPage } = actions;
+  return new Promise((resolve) => {
+    // if the page component is the index page component
+    if (page.componentPath === `${__dirname}/src/templates/Homepage.jsx`) {
+      deletePage(page);
+      // create a new page but with '/' as path
+      createPage({
+        ...page,
+        matchPath: `${langPrefix(page)}/*`,
+        path: '/',
+      });
+    }
+    resolve();
+  });
+};
+*/
+
+exports.onCreateNode = ({ node, actions }) => {
+  const { createNodeField } = actions;
   if (node.internal.type === `Mdx`) {
-    const value = createFilePath({ node, getNode })
-
     createNodeField({
-      name: `slug`,
       node,
-      value: value,
-    })
+      name: `timeToRead`,
+      value: readingTime(node.body),
+    });
+    createNodeField({
+      node,
+      name: `slug`,
+      value: `/${slugify(node.frontmatter.title)}`,
+    });
   }
-}
+};
 
-exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+exports.createSchemaCustomization = async ({
+  getNode,
+  getNodesByType,
+  pathPrefix,
+  reporter,
+  cache,
+  actions,
+  schema,
+  store,
+}) => {
+  const { createTypes } = actions;
+
+  const headingsResolver = schema.buildObjectType({
+    name: `Mdx`,
+    fields: {
+      headings: {
+        type: `[MdxHeading]`,
+        async resolve(mdxNode) {
+          const fileNode = getNode(mdxNode.parent);
+
+          if (!fileNode) {
+            return null;
+          }
+
+          const result = await compileMDXWithCustomOptions(
+            {
+              source: mdxNode.body,
+              absolutePath: fileNode.absolutePath,
+            },
+            {
+              pluginOptions: {},
+              customOptions: {
+                mdxOptions: {
+                  remarkPlugins: [remarkHeadingsPlugin],
+                },
+              },
+              getNode,
+              getNodesByType,
+              pathPrefix,
+              reporter,
+              cache,
+              store,
+            }
+          );
+
+          if (!result) {
+            return null;
+          }
+
+          return result.metadata.headings;
+        },
+      },
+    },
+  });
+
+  createTypes([
+    `
+      type MdxHeading {
+        value: String
+        depth: Int
+      }
+    `,
+    headingsResolver,
+  ]);
+};
+
+const createTagPages = async (createPage, posts) => {
+  const allTagsIndexTemplate = path.resolve('./src/templates/allTagsIndex.jsx');
+  const singleTagIndexTemplate = path.resolve('./src/templates/singleTagIndex.jsx');
+  const postsByTag = {};
+
+  posts.forEach(async (node) => {
+    if (node.frontmatter?.tags) {
+      node.frontmatter.tags.forEach((tag) => {
+        if (!postsByTag[tag]) {
+          postsByTag[tag] = [];
+        }
+        postsByTag[tag].push(node);
+      });
+    }
+  });
+
+  const tags = Object.keys(postsByTag);
+
+  await createPage({
+    path: '/tags',
+    component: allTagsIndexTemplate,
+    context: {
+      tags: tags.sort(),
+    },
+  });
+
+  await tags.forEach(async (tagName) => {
+    const posts = postsByTag[tagName];
+    await createPage({
+      path: `/tags/${tagName}`,
+      component: singleTagIndexTemplate,
+      context: {
+        posts,
+        tagName,
+      },
+    });
+  });
+};
+
+exports.createPages = async ({ graphql, actions, reporter }) => {
+  const { createPage } = actions;
 
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
       {
-        allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
+        allMdx(sort: { frontmatter: { date: DESC } }, limit: 1000) {
           nodes {
             id
-            slug
+            frontmatter {
+              slug
+              tags
+            }
+            internal {
+              contentFilePath
+            }
+          }
+        }
+        allLocale {
+          nodes {
+            language
           }
         }
       }
     `
-  )
+  );
 
   if (result.errors) {
-    reporter.panicOnBuild(
-      `There was an error loading your blog posts`,
-      result.errors
-    )
-    return
+    reporter.panicOnBuild(`There was an error loading your blog posts`, result.errors);
+    return;
   }
 
   // Create blog posts pages.
-  const posts = result.data.allMdx.nodes
+  const posts = result.data.allMdx.nodes;
+  const languages = result.data.allLocale.nodes;
+  const totalCount = posts.length;
+  const length = Math.ceil(totalCount / POSTS_PER_PAGE);
+  const homepageURL = '/';
+  await createTagPages(createPage, posts);
+
+  await Promise.all(
+    languages.map(({ language }) =>
+      Array.from({ length }).map(async (_, i) => {
+        const index = i + 1;
+        const indexPagePath = i === 0 ? homepageURL : `${homepageURL}${index}`;
+        const languagePath = language === 'en' ? indexPagePath : `/${language}${indexPagePath}`;
+
+        await createPage({
+          path: languagePath,
+          component: path.resolve(`./src/templates/Homepage.jsx`),
+          context: {
+            limit: POSTS_PER_PAGE,
+            skip: i * POSTS_PER_PAGE,
+            current: index,
+            pageSize: length,
+            totalCount,
+            currentPath: languagePath,
+            language,
+          },
+        });
+      })
+    )
+  );
 
   await Promise.all(
     posts.map(async (post, index) => {
-      const id = post.id
-      const previousPostId = index === 0 ? null : posts[index - 1].id
-      const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id
-
+      const { id, frontmatter } = post;
+      const previousPostId = index === 0 ? null : posts[index - 1].id;
+      const nextPostId = index === totalCount - 1 ? null : posts[index + 1].id;
       await createPage({
-        path: post.slug,
-        component: path.resolve(`./src/templates/BlogPost.jsx`),
+        path: frontmatter.slug,
+        component: `${path.resolve(`./src/templates/BlogPost.jsx`)}?__contentFilePath=${
+          post.internal.contentFilePath
+        }`,
         context: {
           id,
           previousPostId,
           nextPostId,
         },
-      })
+      });
     })
-  )
-}
+  );
+};

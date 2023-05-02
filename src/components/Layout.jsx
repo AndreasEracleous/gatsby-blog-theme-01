@@ -1,15 +1,26 @@
-import React from "react";
-import Header from "./Header";
-import Footer from "./Footer";
+import { ThemeProvider } from 'context/theme';
+import PropTypes from 'prop-types';
+import React from 'react';
 
-const Layout = ({ children }) => {
-  return (
-    <div className="container mx-auto px-3">
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </div>
-  );
+import Footer from './Footer';
+import Header from './Header';
+
+const LayoutInner = ({ children }) => (
+  <div className="flex min-h-screen flex-col dark:bg-gray-800 dark:text-white">
+    <Header />
+    <main className="flex-grow">{children}</main>
+    <Footer />
+  </div>
+);
+
+LayoutInner.propTypes = {
+  children: PropTypes.node.isRequired,
 };
+
+const Layout = (props) => (
+  <ThemeProvider>
+    <LayoutInner {...props} />
+  </ThemeProvider>
+);
 
 export default Layout;

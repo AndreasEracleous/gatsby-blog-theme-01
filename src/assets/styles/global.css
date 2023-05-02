@@ -1,1 +1,12 @@
-@import "tailwind.css";
+/* TODO: Add global styles: font-size, color, and other if needed */
+@layer base {
+  body {
+    @apply min-w-[320px] antialiased font-poppins text-sm md:text-base text-gray-900;
+    -webkit-tap-highlight-color: transparent;
+  }
+  h1{
+    @apply text-3xl font-bold tracking-tight;
+  }
+}
+
+

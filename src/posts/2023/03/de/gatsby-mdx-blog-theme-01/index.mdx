@@ -1,0 +1,51 @@
+---
+title: Gatsby MDX Blog Theme
+slug: /de/blog/blog-1
+featuredImage: ./gatsby-mdx-blog-theme-01.jpg
+date: 2022-05-12
+language: de
+---
+# Hello, world DE!
+
+**Prerequisites**
+
+1. React
+2. Gatsby
+3. Tailwind CSS
+
+**Components:**
+
+- SEO
+- Header
+- Footer
+- Layout
+- PostLayout
+- PostListLayout
+- Newsletter Form
+- Pagination
+- SocialMedial
+- Images
+
+**SSR**
+
+- Metatags for SEO
+- Paginated Home Page
+
+**Deploy**
+
+- Netlify
+- Cloudflare page
+- Gatsby Cloud
+
+**Page 📝** index.jsx
+
+```html
+<Seo title="{seoTitle}" />
+{intro} {welcome}
+<NewsletterForm actionUrl="{subscribeURL}" />
+<SocialMedia
+	className="flex justify-end space-x-4 mt-3 ml-3"
+	text="{socialMediaText}"
+/>
+<PostListLayout data="{nodes}" />
+```

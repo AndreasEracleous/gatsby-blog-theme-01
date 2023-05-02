@@ -1,26 +1,27 @@
-import React from "react"
-import { Link } from "gatsby"
-import { SITE_METADATA, URL_LIST } from "../config/constants"
+import { Link } from 'gatsby';
+import React from 'react';
+
+import { SITE_METADATA, URL_LIST } from '../config/constants';
 
 const Footer = () => {
-  const title = SITE_METADATA["title"]
-  const twitterURL = URL_LIST["twitter"]
-  const linkedinURL = URL_LIST["linkedin"]
-  const githubURL = URL_LIST["github"]
+  const { title } = SITE_METADATA;
+  const twitterURL = URL_LIST.twitter;
+  const linkedinURL = URL_LIST.linkedin;
+  const githubURL = URL_LIST.github;
   return (
-    <footer className="mt-20 mb-5">
+    <footer className="container mb-5 mt-20">
       <nav className="flex space-x-4">
-        <Link
-          className="text-gray-500 text-base hover:underline"
-          to="/sitemap/sitemap-index.xml"
-        >
+        <Link className="text-base text-gray-500 hover:underline" to="/sitemap/sitemap-index.xml">
           Sitemap
         </Link>
-        <Link className="text-gray-500 text-base hover:underline" to="/rss.xml">
+        <Link className="text-base text-gray-500 hover:underline" to="/rss.xml">
           RSS
         </Link>
+        <Link className="text-base text-gray-500 hover:underline" to="/tags">
+          Tags
+        </Link>
         <a
-          className="text-gray-500 text-base hover:underline"
+          className="text-base text-gray-500 hover:underline"
           href={twitterURL}
           aria-label="Twitter"
           target="_blank"
@@ -29,7 +30,7 @@ const Footer = () => {
           Twitter
         </a>
         <a
-          className="text-gray-500 text-base hover:underline"
+          className="text-base text-gray-500 hover:underline"
           href={linkedinURL}
           aria-label="Linkedin"
           target="_blank"
@@ -38,7 +39,7 @@ const Footer = () => {
           LinkedIn
         </a>
         <a
-          className="text-gray-500 text-base hover:underline"
+          className="text-base text-gray-500 hover:underline"
           href={githubURL}
           aria-label="Github"
           target="_blank"
@@ -47,10 +48,10 @@ const Footer = () => {
           GitHub
         </a>
       </nav>
-      <hr className="my-3 border-gray" />
+      <hr className="border-gray my-3" />
       <small className="text-base">
-        © {new Date().getFullYear()} {title} | All Rights Reserved | Website
-        designed &amp; developed by{" "}
+        © {new Date().getFullYear()} {title} | All Rights Reserved | Website designed &amp;
+        developed by{' '}
         <a
           href="https://andreaseracleous.com/"
           target="_blank"
@@ -61,7 +62,7 @@ const Footer = () => {
         </a>
       </small>
     </footer>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
