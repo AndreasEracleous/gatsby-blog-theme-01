@@ -30,31 +30,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/src/locales/`,
-        name: `locale`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-react-i18next`,
-      options: {
-        localeJsonSourceName: 'locale',
-        languages: ['en', 'de'],
-        defaultLanguage: 'en',
-        siteUrl,
-        i18nextOptions: {
-          debug: true,
-          fallbackLanguage: 'en',
-          interpolation: {
-            escapeValue: false,
-          },
-          keySeparator: false,
-          nsSeparator: false,
-        },
-      },
-    },
-    {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId,

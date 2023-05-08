@@ -5,11 +5,9 @@ import SocialMedia from 'components/SocialMedia';
 import { PAGE_CONTENT } from 'config/constants';
 import { motion } from 'framer-motion';
 import { graphql, Link } from 'gatsby';
-import { useTranslation } from 'gatsby-plugin-react-i18next';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 const Homepage = ({ data, ...props }) => {
-  const { t } = useTranslation();
   const { nodes } = data.allMdx;
   const { title } = PAGE_CONTENT;
   const seoTitle = PAGE_CONTENT.seo_title;
@@ -50,7 +48,6 @@ const Homepage = ({ data, ...props }) => {
       }}
     >
       <LanguageSwitcher />
-      <p>{t('message')}</p>
       {intro}
       <NewsletterForm actionUrl={subscribeURL} />
       <PostList data={nodes} {...props} />
@@ -61,16 +58,7 @@ const Homepage = ({ data, ...props }) => {
 export default Homepage;
 
 export const query = graphql`
-  query SITE_INDEX_QUERY($skip: Int, $limit: Int, $language: String!) {
-    locales: allLocale(filter: { language: { eq: $language } }) {
-      edges {
-        node {
-          ns
-          data
-          language
-        }
-      }
-    }
+  query SITE_INDEX_QUERY($skip: Int, $limit: Int) {
     allMdx(sort: { frontmatter: { date: DESC } }, limit: $limit, skip: $skip) {
       nodes {
         id

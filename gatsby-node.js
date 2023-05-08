@@ -7,6 +7,8 @@ const slugify = require(`@sindresorhus/slugify`);
 const { compileMDXWithCustomOptions } = require(`gatsby-plugin-mdx`);
 const { remarkHeadingsPlugin } = require(`./remark-headings-plugin`);
 
+const homepageTemplate = path.resolve(`./src/templates/Homepage.jsx`);
+
 const langPrefix = (page) =>
   page.context.language === page.context.i18n.defaultLanguage &&
   !page.context.i18n.generateDefaultLanguagePage
@@ -173,11 +175,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             }
           }
         }
-        allLocale {
-          nodes {
-            language
-          }
-        }
       }
     `
   );
@@ -189,34 +186,29 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
   // Create blog posts pages.
   const posts = result.data.allMdx.nodes;
-  const languages = result.data.allLocale.nodes;
   const totalCount = posts.length;
   const length = Math.ceil(totalCount / POSTS_PER_PAGE);
   const homepageURL = '/';
   await createTagPages(createPage, posts);
 
   await Promise.all(
-    languages.map(({ language }) =>
-      Array.from({ length }).map(async (_, i) => {
-        const index = i + 1;
-        const indexPagePath = i === 0 ? homepageURL : `${homepageURL}${index}`;
-        const languagePath = language === 'en' ? indexPagePath : `/${language}${indexPagePath}`;
+    Array.from({ length }).map(async (_, i) => {
+      const index = i + 1;
+      const path = i === 0 ? homepageURL : `${homepageURL}${index}`;
 
-        await createPage({
-          path: languagePath,
-          component: path.resolve(`./src/templates/Homepage.jsx`),
-          context: {
-            limit: POSTS_PER_PAGE,
-            skip: i * POSTS_PER_PAGE,
-            current: index,
-            pageSize: length,
-            totalCount,
-            currentPath: languagePath,
-            language,
-          },
-        });
-      })
-    )
+      await createPage({
+        path,
+        component: homepageTemplate,
+        context: {
+          limit: POSTS_PER_PAGE,
+          skip: i * POSTS_PER_PAGE,
+          current: index,
+          pageSize: length,
+          totalCount,
+          currentPath: path,
+        },
+      });
+    })
   );
 
   await Promise.all(

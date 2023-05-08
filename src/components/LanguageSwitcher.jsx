@@ -1,5 +1,5 @@
 // src/components/LanguageSwitcher.js
-import { Link } from 'gatsby-plugin-react-i18next';
+import { Link } from 'gatsby';
 import React from 'react';
 
 const LanguageSwitcher = () => (
